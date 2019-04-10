@@ -18,7 +18,7 @@
 			    overflow: hidden;
 			    position: relative;
 			    width:100%;
-			    margin: 80px auto 5% auto;
+			    margin: 0px auto 5% auto;
 			}
 			.box1 li{
 			    float: left;
@@ -102,6 +102,40 @@
 				right: 10px;
 				background: url(img/next.png);
 			}
+			.silder ul li{
+				position: relative;
+			}
+			.silder ul li .mask{
+				position: absolute;
+				bottom:0;
+				left:0;
+				right:0;
+				top:392px;
+				background: rgba(0,0,0,0.6);
+			}
+			.silder ul li .mask .title{
+				text-align: center;
+				color:#fff;
+				margin-bottom: 15px;
+				font-size: 16px;
+				margin-top:150px;
+			}
+			.silder ul li .mask p{
+				font-size: 14px;
+				color:#fff;
+				margin:0 20px;
+				line-height: 30px;
+			}
+			.silder ul li .mask a{
+				padding:5px 20px;
+				color:#008CD6;
+				font-size: 14px;
+				border-radius: 15px;
+				background: #DCDCDC;
+			}
+			.silder ul li .mask .lookdetail{
+				text-align: center;
+			}
 		</style>
 	</head>
 	<body>
@@ -158,28 +192,28 @@
 						<img src="img/yewu01.jpg" alt="">
 						<div class="ins">
 							<span>智慧水务</span>
-							<p>智慧水务通过数采仪、无线网络、水质水压表等在线监测设备实时感知城市供排水系统的运行状态，并采用可视化的方式有机整合水务管理部门与供排水设施，形成“城市水务物联网”</p>
+							<p>智慧水务通过数采仪、无线网络、水质水压表等在线监测城市供排水系统的运行状态，形成“城市水务物联网”</p>
 						</div>
 					</li>
 					<li>
 						<img src="img/yewu02.jpg" alt="">
 						<div class="ins">
-							<span>智慧水务</span>
-							<p>智慧水务通过数采仪、无线网络、水质水压表等在线监测设备实时感知城市供排水系统的运行状态，并采用可视化的方式有机整合水务管理部门与供排水设施，形成“城市水务物联网”</p>
+							<span>智慧用电</span>
+							<p>智慧安全用电监控系统可通过声光报警、手机APP、短信报警、电话通知等提醒方式提醒用户用电系统的安全状态。</p>
 						</div>
 					</li>
 					<li>
 						<img src="img/yewu03.jpg" alt="">
 						<div class="ins">
-							<span>智慧水务</span>
-							<p>智慧水务通过数采仪、无线网络、水质水压表等在线监测设备实时感知城市供排水系统的运行状态，并采用可视化的方式有机整合水务管理部门与供排水设施，形成“城市水务物联网”</p>
+							<span>世界物联</span>
+							<p>物联网将现实世界数字化，应用范围十分广泛。物联网的应用领域主要包括智能物联网水表、智慧用电监控系统。</p>
 						</div>
 					</li>
 					<li style="margin-right:0;">
 						<img src="img/yewu04.jpg" alt="">
 						<div class="ins">
-							<span>智慧水务</span>
-							<p>智慧水务通过数采仪、无线网络、水质水压表等在线监测设备实时感知城市供排水系统的运行状态，并采用可视化的方式有机整合水务管理部门与供排水设施，形成“城市水务物联网”</p>
+							<span>大数据计算</span>
+							<p>运用大数据计算，整合用水用电情况，适时提出节水、用电安全预警，把科技运用到生产生活中。</p>
 						</div>
 					</li>
 				</ul>
@@ -199,12 +233,33 @@
 						<ul>
 							<li>
 								<img src="img/fangan01.jpg" alt="">
+								<div class="mask">
+									<h3 class='title'>智慧水务</h3>
+									<p>新兴信息技术充分运用于城市水务综合管理，把传感器嵌入和装备到自然水和社会水循环系统中，并通过普遍连接形成“感知物联网”。</p>
+									<p class="lookdetail">
+										<a href="javascript:void(0)">查看详情></a>
+									</p>
+								</div>
 							</li>
 							<li>
 								<img src="img/fangan02.jpg" alt="">
+								<div class="mask">
+									<h3 class='title'>城市消防</h3>
+									<p>城市消防物联网的建设，将为城市消防监督管理部门的科学监督、管理和执法提供真实，有效和实时的数据保证，实现“人防”、“技防”于一体的应用目标。</p>
+									<p class="lookdetail">
+										<a href="javascript:void(0)">查看详情></a>
+									</p>
+								</div>
 							</li>
 							<li>
 								<img src="img/fangan03.jpg" alt="">
+								<div class="mask">
+									<h3 class='title'>社区消防</h3>
+									<p>智慧安全社区整合社区内部安防、消防、门禁、道闸、智慧弄老等多种系统，提供不同应用场景管理平台，解决城市社会治安及服务最后一公里难题。</p>
+									<p class="lookdetail">
+										<a href="javascript:void(0)">查看详情></a>
+									</p>
+								</div>
 							</li>
 						</ul>
 					</div>
@@ -246,12 +301,32 @@
 					</li>
 				</ul>
 				<div class="abousIns">
-					<p>北京云梦智慧科技有限公司是一家专门从事地下管网信息化、智慧水务、智慧消防等相关领域关键技术研发和产业化的高科技公司，拥有多项自主研发的软硬件技术和完善的售后服务体系。 </p>
-					<p>公司主要从事智慧水务与智慧消防的产品研发、生产、销售和系统集成，产品范围覆盖智慧水务与智慧消防的整体解决方案、智慧用电检测终端、物联网烟感、物联网水表等。</p>
-					<p>公司秉承：“质量为本，信誉第一”的经营理念，为中国的智慧城市建设提供最优质的高科技产品，立志成为世界一流的智慧城市建设与运营服务商！</p>
-					<p class="btn">
-						<a class="lookmore" href="javascript:void(0)">查看详情>></a>
-					</p>
+					<div class="show">
+						<p>北京云梦智慧科技有限公司是一家专门从事地下管网信息化、智慧水务、智慧消防等相关领域关键技术研发和产业化的高科技公司，拥有多项自主研发的软硬件技术和完善的售后服务体系。 </p>
+						<p>公司主要从事智慧水务与智慧消防的产品研发、生产、销售和系统集成，产品范围覆盖智慧水务与智慧消防的整体解决方案、智慧用电检测终端、物联网烟感、物联网水表等。</p>
+						<p>公司秉承：“质量为本，信誉第一”的经营理念，为中国的智慧城市建设提供最优质的高科技产品，立志成为世界一流的智慧城市建设与运营服务商！</p>
+						<p class="btn">
+							<a class="lookmore" href="javascript:void(0)">查看详情>></a>
+						</p>
+					</div>
+					<div>
+						<p>北京云梦智慧科技有限公司由总经理统筹管理：产品研发中心、规划咨询部、市场营销中心、行政人事部、软件开发中心、硬件产品研发部、商务部、项目部、售前支持部、技术维修部。</p>
+						<p class="btn">
+							<a class="lookmore" href="javascript:void(0)">查看详情>></a>
+						</p>
+					</div>
+					<div>
+						<p>诚信铸就品质  创新引领未来公司严格按照科学、高效、严谨、创新的管理要求，秉承“高新技术创造优质名品，周到服务孕育无限商机”的经营理念，建立制度化、标准化、系统化的运营机制和管理体系，打造最值得信赖的智慧系统和服务供应商，为智慧城市的发展做出贡献。</p>
+						<p class="btn">
+							<a class="lookmore" href="javascript:void(0)">查看详情>></a>
+						</p>
+					</div>
+					<div>
+						<p>云梦智慧式安全用电监控预警服务云平台是国内领先的智慧用电安全监管服务系统，具有多项发明专利、实用新型专利、软件著作等。公司拥有智慧水务领域前沿的软硬件技术和完善的售后服务体系，各项荣誉称号及质量与环境体系认证，连续被评为中国智能水表综合实力前十强企业，最具创新力企业、技术领先企业与国家级高新技术企业；中国智能水表最具价值品牌、知名品牌企业，全国安全饮用水工程推广品牌，全国水利系重点推荐优秀产品。</p>
+						<p class="btn">
+							<a class="lookmore" href="javascript:void(0)">查看详情>></a>
+						</p>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -493,7 +568,7 @@
 				$('.silder-box-1').mySilder({
 					width: 306, //容器的宽度 必选参数!!!!!!
 					height: 392, //容器的高度 必选参数!!!!!!
-					auto: true, //是否自动滚动
+					auto: false, //是否自动滚动
 					autoTime: 5, //自动滚动时，时间间隙，即多长滚动一次,单位(秒)
 					direction: 'x', //滚动方向,默认X方向
 					autoType: 'left', //滚动方向，auto为true时生效
@@ -560,6 +635,8 @@
 			//关于我们tab切换
 			$('.absHandle li').click(function() {
 				$(this).addClass('active').siblings().removeClass('active');
+				var index = $(this).index();
+				$(".abousIns>div:eq("+ index +")").addClass("show").siblings().removeClass('show');
 			})
 			//底部(合作伙伴)无缝滚动
 			var AutoScroll_cont = function(a, b, c, d) {
@@ -662,6 +739,17 @@
 					$('.container').removeClass('acstyle');
 				}
 			}
+			
+			$(".silder ul li").mouseover(function(){
+				$(this).find(".mask").animate({
+					"top" : "0"
+				},100);
+			})
+			$(".silder ul li").mouseleave(function(){
+				$(this).find(".mask").animate({
+					"top" : "392px"
+				},100);
+			})
 		</script>
 	</body>
 </html>

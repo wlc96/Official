@@ -128,7 +128,7 @@ button {
   display: inline-block;
   line-height: 100px;
   height: 74px;
-  font-size: 21px;
+  font-size: 18px;
   padding: 0px 10px;
 }
 .container .content .mavList li a .txt {
@@ -326,6 +326,13 @@ button {
   background-color: #dcdcdc;
   margin-top: -3px;
   padding-top: 50px;
+}
+.aboutUs .absContent .abousIns>div{
+	margin:0 15px;
+	display: none;
+}
+.aboutUs .absContent .abousIns>div.show{
+	display: block;
 }
 .aboutUs .absContent .abousIns p {
   text-align: center;
