@@ -6,7 +6,6 @@
 		<link rel="stylesheet" type="text/css" href="css/fangan.css" />
 		<link rel="stylesheet" href="less/style.css">
 
-
 		<style>
 			body{
 				width: 100%;
@@ -238,7 +237,7 @@
 									<h3 class='title'>智慧水务</h3>
 									<p>新兴信息技术充分运用于城市水务综合管理，把传感器嵌入和装备到自然水和社会水循环系统中，并通过普遍连接形成“感知物联网”。</p>
 									<p class="lookdetail">
-										<a href="javascript:void(0)">查看详情></a>
+										<a class="linkfa" data-state="2" href="javascript:void(0)">查看详情></a>
 									</p>
 								</div>
 							</li>
@@ -248,7 +247,7 @@
 									<h3 class='title'>城市消防</h3>
 									<p>城市消防物联网的建设，将为城市消防监督管理部门的科学监督、管理和执法提供真实，有效和实时的数据保证，实现“人防”、“技防”于一体的应用目标。</p>
 									<p class="lookdetail">
-										<a href="javascript:void(0)">查看详情></a>
+										<a class="linkfa" data-state="4" href="javascript:void(0)">查看详情></a>
 									</p>
 								</div>
 							</li>
@@ -258,7 +257,7 @@
 									<h3 class='title'>社区消防</h3>
 									<p>智慧安全社区整合社区内部安防、消防、门禁、道闸、智慧弄老等多种系统，提供不同应用场景管理平台，解决城市社会治安及服务最后一公里难题。</p>
 									<p class="lookdetail">
-										<a href="javascript:void(0)">查看详情></a>
+										<a class="linkfa" data-state="5" href="javascript:void(0)">查看详情></a>
 									</p>
 								</div>
 							</li>
@@ -750,6 +749,11 @@
 				$(this).find(".mask").animate({
 					"top" : "392px"
 				},100);
+			})
+			
+			$(".linkfa").click(function(){
+				var no = $(this).attr("data-state");
+				window.location.href= globalUrl + "solution.html?state="+no;
 			})
 		</script>
 	</body>

@@ -109,7 +109,7 @@
 					</div>
 					<p>智慧消防平台总体架构围绕六层架构、四大体系搭建整体框架。六层架构分别为:前瑞数据采集层、数据及传输层、中心层、支撑平台层、业务应用层，用户服务层等六层架构，四大体系包括:数据融合体系、标准规范体系、安全保障体系以及运维管理体系。</p>
 					<div class="imgInner">
-						<img src="img/aj6.png" alt="">
+						<img src="img/aj6.jpg" alt="">
 					</div>
 					<p>充分运用大数据、云计算、移动互联网、地理信息等技术，实现灭火救援的一张图指挥、一张图分析、一张图调度、一张图决策。</p>
 					<div class="imgInner">
@@ -221,6 +221,14 @@
 		<script type="text/javascript">
 			
 			$(function() {
+				//判断跳转到当前页面时传递过来的参数值,显示对应的数据
+				var url = window.location.href;
+				if(url.indexOf("?")>0){
+					var prams = url.split("?")[1];
+					var index = prams.split("=")[1];
+					$(".handle:eq("+ index +")").click();
+				}
+				
 				
 				//顶部导航栏鼠标移入事件
 				$('.mavList li').mouseover(function() {
