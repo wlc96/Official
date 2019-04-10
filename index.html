@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>云梦智慧科技有限公司</title>
+		<link rel="stylesheet" type="text/css" href="css/fangan.css" />
+		<link rel="stylesheet" href="less/style.css">
+
+		<style>
+			body{
+				width: 100%;
+				min-width: 1250px;
+				_width: expression((document.documentElement.clientWidth||document.body.clientWidth)<1250?"1250px":"");
+				margin: 0 auto;
+				background: #fff;
+			}
+			.box,.box1{
+			    overflow: hidden;
+			    position: relative;
+			    width:100%;
+			    margin: 80px auto 5% auto;
+			}
+			.box1 li{
+			    float: left;
+			    list-style: none;
+			}
+			ol{
+			    width:100%;
+			    height: 20px;
+			    position: absolute;
+			    bottom: 0;
+			}
+			ol li{
+			    cursor:pointer;
+			    position: relative;
+			    margin-left: 15px;
+			    display: inline;
+			    width: 15px;
+			    height: 15px;
+			    border-radius: 50%;
+			    background-color: gainsboro;
+			}
+			ol .action{
+			    background-color: #de6e6a;
+			}
+			ol li:hover{
+			    background-color: #DE6E6A;
+			}
+			ul{
+			    position: relative;
+			    left: 0;
+			}
+			.next{
+			    cursor:pointer;
+			    opacity: 0;
+			    position: absolute;
+			    right: 0;
+			    background: url("img/next.png");
+			    width: 50px;
+			    height: 45px;
+			    display: block;
+			    line-height: 80px;
+			}
+			.prev{
+			    cursor:pointer;
+			    opacity: 0;
+			    background: url("img/prev.png");
+			    display: block;
+			    position: absolute;
+			    width: 50px;
+			    height: 45px;
+			    text-align: center;
+			    line-height: 80px;
+			}
+			.prev,.next{
+			    transition: all 0.5s;
+			}
+			.next:hover,.prev:hover{
+			    -webkit-transform: scale(1.2,1.2);
+			    -moz-transform: scale(1.2,1.2);
+			    -ms-transform: scale(1.2,1.2);
+			    -o-transform: scale(1.2,1.2);
+			    transform: scale(1.2,1.2);
+			    opacity: 1!important;
+			    transition: all 0.3s;
+			}
+			.silder{
+				margin:0 auto;
+			}
+			.silder-button {
+				top: 173px;
+				width: 50px;
+				height: 45px;
+				position: absolute;
+				cursor: pointer;
+			}
+			.silder-button.btl {
+				left: 10px;
+				background: url(img/prev.png);
+			}
+			.silder-button.btr {
+				right: 10px;
+				background: url(img/next.png);
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="content">
+				<img class="logoImg" src="img/logo.png" alt="">
+				<ul class="mavList">
+					<li class="active" data-url="index.html">
+						<a href="javascript:void(0)"><span class="txt">首页</span></a>
+						<p class="line"></p>
+					</li>
+					<li data-url="solution.html">
+						<a href="javascript:void(0)"><span class="txt">解决方案</span></a>
+						<p class="line"></p>
+					</li>
+					<li data-url="smartLife.html">
+						<a href="javascript:void(0)"><span class="txt">智慧生活</span></a>
+						<p class="line"></p>
+					</li>
+					<li data-url="openPlatform.html">
+						<a href="javascript:void(0)"><span class="txt">开放平台</span></a>
+						<p class="line"></p>
+					</li>
+					<li data-url="operateCenter.html">
+						<a href="javascript:void(0)"><span class="txt">运营中心</span></a>
+						<p class="line"></p>
+					</li>
+				</ul>
+			</div>
+
+		</div>
+		<!-- 轮播图 -->
+		<div class="box1" id="box1">
+			<ul id="list1" class="list">
+				<li class="li">
+					<img src="img/banner1.jpg" alt="">
+				</li>
+				<li class="li">
+					<img src="img/banner2.jpg" alt="">
+				</li>
+			</ul>
+		</div>
+		<!-- 业务板块 -->
+		<div class="yeWuBox ywInner">
+			<h3 class="firstTit">BUSINESS SEGMENTS</h3>
+			<h3 class="subTit">
+				<p class="line">
+					<span>业务板块</span>
+				</p>
+			</h3>
+			<div class="ywContent">
+				<ul class="ywList">
+					<li>
+						<img src="img/yewu01.jpg" alt="">
+						<div class="ins">
+							<span>智慧水务</span>
+							<p>智慧水务通过数采仪、无线网络、水质水压表等在线监测设备实时感知城市供排水系统的运行状态，并采用可视化的方式有机整合水务管理部门与供排水设施，形成“城市水务物联网”</p>
+						</div>
+					</li>
+					<li>
+						<img src="img/yewu02.jpg" alt="">
+						<div class="ins">
+							<span>智慧水务</span>
+							<p>智慧水务通过数采仪、无线网络、水质水压表等在线监测设备实时感知城市供排水系统的运行状态，并采用可视化的方式有机整合水务管理部门与供排水设施，形成“城市水务物联网”</p>
+						</div>
+					</li>
+					<li>
+						<img src="img/yewu03.jpg" alt="">
+						<div class="ins">
+							<span>智慧水务</span>
+							<p>智慧水务通过数采仪、无线网络、水质水压表等在线监测设备实时感知城市供排水系统的运行状态，并采用可视化的方式有机整合水务管理部门与供排水设施，形成“城市水务物联网”</p>
+						</div>
+					</li>
+					<li style="margin-right:0;">
+						<img src="img/yewu04.jpg" alt="">
+						<div class="ins">
+							<span>智慧水务</span>
+							<p>智慧水务通过数采仪、无线网络、水质水压表等在线监测设备实时感知城市供排水系统的运行状态，并采用可视化的方式有机整合水务管理部门与供排水设施，形成“城市水务物联网”</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- 解决方案 -->
+		<div class="yeWuBox">
+			<h3 class="firstTit">SOLUTION</h3>
+			<h3 class="subTit">
+				<p class="line">
+					<span>解决方案</span>
+				</p>
+			</h3>
+			<div class="fangAn">
+				<div class='silder-box silder-box-1'>
+					<div class='silder'>
+						<ul>
+							<li>
+								<img src="img/fangan01.jpg" alt="">
+							</li>
+							<li>
+								<img src="img/fangan02.jpg" alt="">
+							</li>
+							<li>
+								<img src="img/fangan03.jpg" alt="">
+							</li>
+						</ul>
+					</div>
+					<div class='silder-button btl'></div>
+					<div class='silder-button btr'></div>
+				</div>
+			</div>
+		</div>
+
+
+
+		<!-- 关于我们 -->
+		<div class="yeWuBox">
+			<h3 class="firstTit">ABOUT US</h3>
+			<h3 class="subTit">
+				<p class="line">
+					<span>关于我们</span>
+				</p>
+			</h3>
+		</div>
+		<div class="aboutUs">
+			<div class="absContent">
+				<ul class="absHandle">
+					<li class="active">
+						<span class="imgBox"><img src="img/abs01.png" alt=""></span>
+						<p><span>云梦智慧</span></p>
+					</li>
+					<li>
+						<span class="imgBox"><img src="img/abs02.png" alt=""></span>
+						<p><span>组织结构</span></p>
+					</li>
+					<li>
+						<span class="imgBox"><img src="img/abs03.png" alt=""></span>
+						<p><span>企业文化</span></p>
+					</li>
+					<li>
+						<span class="imgBox"><img src="img/abs04.png" alt=""></span>
+						<p><span>公司荣誉</span></p>
+					</li>
+				</ul>
+				<div class="abousIns">
+					<p>北京云梦智慧科技有限公司是一家专门从事地下管网信息化、智慧水务、智慧消防等相关领域关键技术研发和产业化的高科技公司，拥有多项自主研发的软硬件技术和完善的售后服务体系。 </p>
+					<p>公司主要从事智慧水务与智慧消防的产品研发、生产、销售和系统集成，产品范围覆盖智慧水务与智慧消防的整体解决方案、智慧用电检测终端、物联网烟感、物联网水表等。</p>
+					<p>公司秉承：“质量为本，信誉第一”的经营理念，为中国的智慧城市建设提供最优质的高科技产品，立志成为世界一流的智慧城市建设与运营服务商！</p>
+					<p class="btn">
+						<a class="lookmore" href="javascript:void(0)">查看详情>></a>
+					</p>
+				</div>
+			</div>
+		</div>
+		<!-- 合作伙伴 -->
+		<div class="yeWuBox">
+			<h3 class="firstTit">PARTNER</h3>
+			<h3 class="subTit">
+				<p class="line">
+					<span>合作伙伴</span>
+				</p>
+			</h3>
+			<div id="bb" style="overflow: hidden;">
+				<ul>
+
+					<li>
+						<a target="_blank" href="javascript:void(0)" title="">
+							<img src="img/hezuo01.png" width="138" height="48" />
+						</a>
+					</li>
+
+					<li>
+						<a target="_blank" href="javascript:void(0)" title="">
+							<img src="img/hezuo02.png" width="138" height="48" />
+						</a>
+					</li>
+
+					<li>
+						<a target="_blank" href="javascript:void(0)" title="">
+							<img src="img/hezuo03.png" width="138" height="48" />
+						</a>
+					</li>
+
+					<li>
+						<a target="_blank" href="javascript:void(0)" title="">
+							<img src="img/hezuo04.png" width="138" height="48" />
+						</a>
+					</li>
+
+					<li>
+						<a target="_blank" href="javascript:void(0)" title="">
+							<img src="img/hezuo05.png" width="138" height="48" />
+						</a>
+					</li>
+
+					<li>
+						<a target="_blank" href="javascript:void(0)" title="">
+							<img src="img/hezuo06.png" width="138" height="48" />
+						</a>
+					</li>
+
+					<li>
+						<a target="_blank" href="javascript:void(0)" title="">
+							<img src="img/hezuo07.png" width="138" height="48" />
+						</a>
+					</li>
+
+					<li>
+						<a target="_blank" href="javascript:void(0)" title="">
+							<img src="img/hezuo08.png" width="138" height="48" />
+						</a>
+					</li>
+
+					<li>
+						<a target="_blank" href="javascript:void(0)" title="">
+							<img src="img/hezuo09.png" width="138" height="48" />
+						</a>
+					</li>
+
+					<li>
+						<a target="_blank" href="javascript:void(0)" title="">
+							<img src="img/hezuo10.png" width="138" height="48" />
+						</a>
+					</li>
+
+					<li>
+						<a target="_blank" href="javascript:void(0)" title="">
+							<img src="img/hezuo11.png" width="138" height="48" />
+						</a>
+					</li>
+
+					<li>
+						<a target="_blank" href="javascript:void(0)" title="">
+							<img src="img/hezuo12.png" width="138" height="48" />
+						</a>
+					</li>
+
+					<li>
+						<a target="_blank" href="javascript:void(0)" title="">
+							<img src="img/hezuo13.png" width="138" height="48" />
+						</a>
+					</li>
+
+					<li>
+						<a target="_blank" href="javascript:void(0)" title="">
+							<img src="img/hezuo14.png" width="138" height="48" />
+						</a>
+					</li>
+
+					<li>
+						<a target="_blank" href="javascript:void(0)" title="">
+							<img src="img/hezuo15.png" width="138" height="48" />
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- 分支机构 -->
+		<div class="yeWuBox">
+			<h3 class="firstTit">BRANCH OFFICE</h3>
+			<h3 class="subTit">
+				<p class="line">
+					<span>分支机构</span>
+				</p>
+			</h3>
+			<div class="fenzhi">
+				<ul>
+					<li class="fzleft">
+						<a href="javascript:void(0)">广东中山分公司</a>
+					</li>
+					<li class="fzright">
+						<a href="javascript:void(0)">四川阆中分公司</a>
+					</li>
+					<li class="fzleft">
+						<a href="javascript:void(0)">湖南长沙分公司</a>
+					</li>
+					<li class="fzright">
+						<a href="javascript:void(0)">浙江杭州分公司</a>
+					</li>
+					<li class="fzleft">
+						<a href="javascript:void(0)">海南海口分公司</a>
+					</li>
+					<li class="fzright">
+						<a href="javascript:void(0)">上海分公司</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- foot -->
+		<div class="footBox">
+			<div class="footContent">
+				<ul>
+					<li class="tit">产品中心</li>
+					<li>
+						<a href="javascript:void(0)">物联网水表</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">蓝牙水表</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">电气火灾探测器</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">可燃气体探测器</a>
+					</li>
+				</ul>
+				<ul>
+					<li class="tit">解决方案</li>
+					<li>
+						<a href="javascript:void(0)">社区供水</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">管网改造</a>
+					</li>
+				</ul>
+				<ul>
+					<li class="tit">智慧生活</li>
+					<li>
+						<a href="javascript:void(0)">智慧水务</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">智慧用电</a>
+					</li>
+				</ul>
+				<ul>
+					<li class="tit">开放平台</li>
+					<li>
+						<a href="javascript:void(0)">平台对接流程</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">申请对接</a>
+					</li>
+				</ul>
+				<ul>
+					<li class="tit">运营中心</li>
+					<li>
+						<a href="javascript:void(0)">智慧水务系统</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">智慧用电系统</a>
+					</li>
+				</ul>
+				<div class="ewmImg">
+					<span>扫一扫关注公众号</span>
+					<img src="img/ewm.jpg" alt="">
+				</div>
+				<p class="banQuan">Copyright©2018-2020 Beijing Yunmeng Wisdom Technology Co., Ltd. All Rights Reserved.
+					北京云梦智慧科技有限公司版权所有 | 京ICP备11036640-1</p>
+			</div>
+		</div>
+		<!-- 右侧固定栏目 -->
+		<div class="fixedlm">
+			<ul>
+				<li>
+					<img src="img/phone.png" alt="">
+				</li>
+				<li>
+					<img src="img/email.png" alt="">
+				</li>
+				<li class="wx">
+					<img src="img/wchat.png" alt="">
+					<div class="wxewm">
+						<img src="img/ewm.jpg" alt="">
+					</div>
+				</li>
+				<li class="goToTop">
+					<span class="topIns">返&nbsp;&nbsp;回<br>顶&nbsp;&nbsp;部</span>
+					<img src="img/up.png" alt="">
+				</li>
+			</ul>
+		</div>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/swiperdemo.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/mySystem.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/global.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			window.onload = function() {
+				var twidth = $('window').width();
+				$('#box1').css('maxWidth', twidth);
+				$("#box1").swiper({
+					ratio: 1920 / 563,
+					time: 4000,
+					stop: true,
+					direction: "left"
+				});
+			}
+			$(function() {
+				//回调函数计数
+				var callbackIndex = 0;
+				$('.silder-box-1').mySilder({
+					width: 306, //容器的宽度 必选参数!!!!!!
+					height: 392, //容器的高度 必选参数!!!!!!
+					auto: true, //是否自动滚动
+					autoTime: 5, //自动滚动时，时间间隙，即多长滚动一次,单位(秒)
+					direction: 'x', //滚动方向,默认X方向
+					autoType: 'left', //滚动方向，auto为true时生效
+					few: 1, //一次滚动几个，默认滚动1张
+					showFew: 3, //显示几个,就不用调css了,默认显示一个
+					clearance: 50, //容器之间的间隙，默认为 0
+					silderMode: 'linear', //滚动方式
+					timeGap: 650, //动画间隙，完成一次动画需要多长时间，默认700ms
+					buttonPre: '.silder-button.btl', //上一个，按钮
+					buttonNext: '.silder-button.btr', //下一个，按钮
+					jz: true, //点击时，是否等待动画完成
+					runEnd: function() { //回调函数
+						callbackIndex++;
+						$('.cj em').text(callbackIndex);
+					}
+				});
+				//顶部导航栏鼠标移入事件
+				$('.mavList li').mouseover(function() {
+					if ($(this).hasClass('active') == false) {
+						//添加底部边框显示的动画
+						$(this).find('.line').animate({
+							width: '100%',
+							borderBottomWidth: '6px'
+						}, 100)
+						//添加导航内容的动画并添加颜色
+						$(this).find('span.txt').animate({
+							top: '-8px'
+						}, {
+							duration: 100,
+							complete: function() {
+								$(this).css("color", "#008ed5");
+							}
+						})
+					}
+				})
+				$('.mavList li').mouseleave(function() {
+					if ($(this).hasClass('active') == false) {
+						$(this).find('.line').animate({
+							width: '0',
+							borderBottomWidth: '6px'
+						}, 100)
+
+						$(this).find('span.txt').animate({
+							top: '0'
+						}, {
+							duration: 100,
+							complete: function() {
+								$(this).css("color", "#88c9d8");
+							}
+						})
+					}
+				})
+				
+				//顶部轮播图左右按键
+				$('.swiper-container.bannerimg').mouseover(function() {
+					$(this).find('.swiper-button-next').show();
+					$(this).find('.swiper-button-prev').show();
+				})
+				$('.swiper-container.bannerimg').mouseleave(function() {
+					$(this).find('.swiper-button-next').hide();
+					$(this).find('.swiper-button-prev').hide();
+				})
+			})
+			//关于我们tab切换
+			$('.absHandle li').click(function() {
+				$(this).addClass('active').siblings().removeClass('active');
+			})
+			//底部(合作伙伴)无缝滚动
+			var AutoScroll_cont = function(a, b, c, d) {
+				this.frameId = a;
+				this.frameWidth = b; //滚动框宽度
+				this.speed = c; //移动速度(单位毫秒，越小越快)
+				this.space = d; //每次移动像素(单位px，越大越快)
+				this._timeoutObj = null;
+			}
+			AutoScroll_cont.prototype = {
+				$: function(id) {
+					return document.getElementById(id)
+				},
+				begin: function() {
+
+					if (!this.$(this.frameId)) {
+						return
+					};
+					this.$(this.frameId).style.overflow = "hidden";
+					this.$(this.frameId).style.width = this.frameWidth + "px";
+					this._bigDiv = document.createElement("div");
+					this._bigDiv.style.zoom = 1;
+					this._bigDiv.style.overflow = "hidden";
+					this._bigDiv.style.width = "32765px";
+					this.div1 = document.createElement("div");
+					this.div2 = document.createElement("div");
+					this.div1.style.cssFloat = this.div1.style.styleFloat = this.div2.style.cssFloat = this.div2.style.styleFloat =
+						"left";
+					tempHTML = this.$(this.frameId).innerHTML;
+					this.$(this.frameId).innerHTML = "";
+					this.$(this.frameId).appendChild(this._bigDiv);
+					this._bigDiv.appendChild(this.div1);
+					this._bigDiv.appendChild(this.div2);
+					this.div1.innerHTML = this.div2.innerHTML = tempHTML;
+
+					var tempThis = this;
+					this.$(this.frameId).onmouseover = function() {
+						tempThis.stop()
+					};
+					this.$(this.frameId).onmouseout = function() {
+						tempThis.play()
+					};
+					this.play();
+				},
+				play: function() {
+					var tempThis = this;
+					clearInterval(this._timeoutObj);
+					this._timeoutObj = setInterval(function() {
+						tempThis.scrollNext()
+					}, this.speed);
+				},
+				stop: function() {
+					clearInterval(this._timeoutObj);
+				},
+				scrollNext: function() {
+
+					try {
+						this.$(this.frameId).scrollLeft += this.space;
+					} catch (e) {
+						this.stop();
+						return;
+					};
+					if (this.$(this.frameId).scrollLeft > this.div1.scrollWidth) {
+						this.$(this.frameId).scrollLeft = this.$(this.frameId).scrollLeft - this.div1.scrollWidth;
+					};
+				}
+			};
+			var b = new AutoScroll_cont('bb', 1200, 40, 2);
+			b.begin();
+
+			//鼠标移入微信显示二维码
+			$('li.wx').mouseover(function() {
+				$(this).find('.wxewm').show();
+			})
+			$('li.wx').mouseleave(function() {
+				$(this).find('.wxewm').hide();
+			})
+
+			$('li.goToTop').mouseover(function() {
+				$(this).find('img').hide();
+				$(this).find('.topIns').show();
+			})
+			$('li.goToTop').mouseleave(function() {
+				$(this).find('img').show();
+				$(this).find('.topIns').hide();
+			})
+			$('li.goToTop').click(function() {
+				$('body,html').animate({
+					scrollTop: 0
+				}, 300);
+			})
+			//判断页面滚动到ywInner位置时
+			window.onscroll = function() {
+				//为了保证兼容性，这里取两个值，哪个有值取哪一个
+				//scrollTop就是触发滚轮事件时滚轮的高度
+				var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+				if(scrollTop >= 400){
+					$('.container').addClass('acstyle');
+				}else{
+					$('.container').removeClass('acstyle');
+				}
+			}
+		</script>
+	</body>
+</html>
