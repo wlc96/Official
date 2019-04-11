@@ -128,7 +128,7 @@ button {
   display: inline-block;
   line-height: 100px;
   height: 74px;
-  font-size: 18px;
+  font-size: 21px;
   padding: 0px 10px;
 }
 .container .content .mavList li a .txt {
@@ -327,13 +327,6 @@ button {
   margin-top: -3px;
   padding-top: 50px;
 }
-.aboutUs .absContent .abousIns>div{
-	margin:0 15px;
-	display: none;
-}
-.aboutUs .absContent .abousIns>div.show{
-	display: block;
-}
 .aboutUs .absContent .abousIns p {
   text-align: center;
   font-size: 14px;
@@ -444,7 +437,7 @@ button {
 }
 /*开放平台页面*/
 .bannerImg {
-  margin: 80px auto 0 auto;
+  margin: 0px auto 0 auto;
 }
 .bannerImg img {
   width: 100%;
@@ -711,5 +704,12 @@ button {
   width: 100%;
 }
 .programe .rightCon .childrenBox.show {
+  display: block;
+}
+.abousIns > div {
+  margin: 0px 15px;
+  display: none;
+}
+.abousIns > div.show {
   display: block;
 }
