@@ -91,52 +91,52 @@
 				<ul>
 					<li class="tit">产品中心</li>
 					<li>
-						<a href="javascript:void(0)">物联网水表</a>
+						<a class="goToLink" data-url="operateCenter.html" href="javascript:void(0)">物联网水表</a>
 					</li>
 					<li>
-						<a href="javascript:void(0)">蓝牙水表</a>
+						<a class="goToLink" data-url="operateCenter.html" href="javascript:void(0)">蓝牙水表</a>
 					</li>
 					<li>
-						<a href="javascript:void(0)">电气火灾探测器</a>
+						<a class="goToLink" data-url="operateCenter.html" href="javascript:void(0)">电气火灾探测器</a>
 					</li>
 					<li>
-						<a href="javascript:void(0)">可燃气体探测器</a>
+						<a class="goToLink" data-url="operateCenter.html" href="javascript:void(0)">可燃气体探测器</a>
 					</li>
 				</ul>
 				<ul>
 					<li class="tit">解决方案</li>
 					<li>
-						<a href="javascript:void(0)">社区供水</a>
+						<a class="goToLink" data-url="solution.html" href="javascript:void(0)">社区供水</a>
 					</li>
 					<li>
-						<a href="javascript:void(0)">管网改造</a>
+						<a class="goToLink" data-url="solution.html" href="javascript:void(0)">管网改造</a>
 					</li>
 				</ul>
 				<ul>
 					<li class="tit">智慧生活</li>
 					<li>
-						<a href="javascript:void(0)">智慧水务</a>
+						<a class="goToLink" data-url="smartLife.html" href="javascript:void(0)">智慧水务</a>
 					</li>
 					<li>
-						<a href="javascript:void(0)">智慧用电</a>
+						<a class="goToLink" data-url="smartLife.html" href="javascript:void(0)">智慧用电</a>
 					</li>
 				</ul>
 				<ul>
 					<li class="tit">开放平台</li>
 					<li>
-						<a href="javascript:void(0)">平台对接流程</a>
+						<a class="goToLink" data-url="openPlatform.html" href="javascript:void(0)">平台对接流程</a>
 					</li>
 					<li>
-						<a href="javascript:void(0)">申请对接</a>
+						<a class="goToLink" data-url="openPlatform.html" href="javascript:void(0)">申请对接</a>
 					</li>
 				</ul>
 				<ul>
 					<li class="tit">运营中心</li>
 					<li>
-						<a href="javascript:void(0)">智慧水务系统</a>
+						<a class="goToLink" data-url="operateCenter.html" href="javascript:void(0)">智慧水务系统</a>
 					</li>
 					<li>
-						<a href="javascript:void(0)">智慧用电系统</a>
+						<a class="goToLink" data-url="operateCenter.html" href="javascript:void(0)">智慧用电系统</a>
 					</li>
 				</ul>
 				<div class="ewmImg">
@@ -144,17 +144,23 @@
 					<img src="img/ewm.jpg" alt="">
 				</div>
 				<p class="banQuan">Copyright©2018-2020 Beijing Yunmeng Wisdom Technology Co., Ltd. All Rights Reserved.</p>
-				<p class="banQuan" style="border:none;top:5px;">北京云梦智慧科技有限公司版权所有 | 京ICP备11036640-1</p>
+				<p class="banQuan" style="border:none;top:5px;">北京云梦智慧科技有限公司版权所有 | 备案号：京ICP备19010936号-2</p>
 			</div>
 		</div>
 		<!-- 右侧固定栏目 -->
 		<div class="fixedlm">
 			<ul>
-				<li>
+				<li class="tel">
 					<img src="img/phone.png" alt="">
+					<div class="telBox">
+						销售电话：18101379181
+					</div>
 				</li>
-				<li>
+				<li class="email">
 					<img src="img/email.png" alt="">
+					<div class="emailBox">
+						请发送至：service@ym-zh.cn
+					</div>
 				</li>
 				<li class="wx">
 					<img src="img/wchat.png" alt="">
@@ -176,42 +182,6 @@
 			
 			$(function() {
 				
-				//顶部导航栏鼠标移入事件
-				$('.mavList li').mouseover(function() {
-					if ($(this).hasClass('active') == false) {
-						//添加底部边框显示的动画
-						$(this).find('.line').animate({
-							width: '100%',
-							borderBottomWidth: '6px'
-						}, 100)
-						//添加导航内容的动画并添加颜色
-						$(this).find('span.txt').animate({
-							top: '-8px'
-						}, {
-							duration: 100,
-							complete: function() {
-								$(this).css("color", "#008ed5");
-							}
-						})
-					}
-				})
-				$('.mavList li').mouseleave(function() {
-					if ($(this).hasClass('active') == false) {
-						$(this).find('.line').animate({
-							width: '0',
-							borderBottomWidth: '6px'
-						}, 100)
-
-						$(this).find('span.txt').animate({
-							top: '0'
-						}, {
-							duration: 100,
-							complete: function() {
-								$(this).css("color", "#88c9d8");
-							}
-						})
-					}
-				})
 			})
 			
 

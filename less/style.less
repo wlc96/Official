@@ -96,10 +96,7 @@ input[type=button], input[type=submit], input[type=file], button { cursor: point
 .container{
 	.th(80px);
 	.tw(100%);
-	.bg(#000000);
-	position: fixed;
-	top:0;
-	opacity: 0.7;
+	.bg(#16245C);
 	z-index: 10;
 	.content{
 		width:@main_w;
@@ -115,6 +112,8 @@ input[type=button], input[type=submit], input[type=file], button { cursor: point
 			.fl;
 			.oh;
 			li{
+				.tw(90px);
+				text-align:center;
 				.fl;
 				.th(80px);
 				.mr(70px);
@@ -122,18 +121,17 @@ input[type=button], input[type=submit], input[type=file], button { cursor: point
 					display: inline-block;
 					.lh(100px);
 					.th(74px);
-					.fs(21px);
-					.pd2(0px,10px);
+					.fs(17px);
+					// .pd2(0px,10px);
 					.txt{
-						.fc(#88c9d8);
+						.fc(#fff);
 						position: relative;
 					}
 				}
-				
 				.line{
 					.tw(0px);
 					.th(0px);
-					border-bottom:6px solid #008ed5;
+					border-bottom:6px solid #3ba8cf;
 					border-radius: 3px;
 					margin:@main_auto;
 				}
@@ -142,15 +140,17 @@ input[type=button], input[type=submit], input[type=file], button { cursor: point
 				a{
 					.txt{
 						position: relative;
-						top:-8px;
-						.fc(#008ed5);
+						// top:-8px;
+						.fs(17px);
+						.fc(#3ba8cf);
+						
 					}
 				}
 				.line{
 					// display: inline-block;
 					.tw(100%);
 					.th(0px);
-					border-bottom:6px solid #008ed5;
+					border-bottom:6px solid #3ba8cf;
 					border-radius: 3px;
 					margin:@main_auto;
 				}
@@ -210,7 +210,7 @@ input[type=button], input[type=submit], input[type=file], button { cursor: point
 				.tw(225px);
 				img{
 					.tw(100%);
-					.th(165px);
+					.th(153px);
 				}
 				.ins{
 					.mt(20px);
@@ -267,6 +267,7 @@ input[type=button], input[type=submit], input[type=file], button { cursor: point
 					.th(100%);
 					.fs(12px);
 					.lh(24px);
+					cursor: auto;
 				}
 			}
 			li.fzleft{
@@ -449,6 +450,38 @@ input[type=button], input[type=submit], input[type=file], button { cursor: point
 			}
 		}
 	}
+	ul li.tel{
+		position: relative;
+		.telBox{
+			.tw(140px);
+			.pd2(0,10px);
+			.th(60px);
+			.lh(30px);
+			position: absolute;
+			top:0px;
+			left:-172px;
+			border-radius: 5px;
+			display: none;
+			.bg(#008CD6);
+			.fc(#fff);
+		}
+	}
+	ul li.email{
+		position: relative;
+		.emailBox{
+			.tw(140px);
+			.pd2(0,10px);
+			.th(60px);
+			.lh(30px);
+			position: absolute;
+			top:0px;
+			left:-172px;
+			border-radius: 5px;
+			display: none;
+			.bg(#008CD6);
+			.fc(#fff);
+		}
+	}
 }
 /*开放平台页面*/
 .bannerImg{
@@ -628,7 +661,6 @@ input[type=button], input[type=submit], input[type=file], button { cursor: point
 			.mg2(20px,25px);
 			text-align:center;
 			box-shadow: 0px 0px 10px 3px #ccc;
-			cursor: pointer;
 			img{
 				.tw(100%);
 			}
