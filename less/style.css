@@ -320,14 +320,15 @@ button {
 }
 .aboutUs .absContent .abousIns {
   width: 100%;
-  height: 188px;
+  height: 198px;
   border-radius: 5px;
   background-color: #dcdcdc;
   margin-top: -3px;
-  padding-top: 50px;
+  padding-top: 40px;
 }
 .aboutUs .absContent .abousIns p {
-  text-align: center;
+  text-align: left;
+  text-indent: 2em;
   font-size: 14px;
   line-height: 30px;
 }
