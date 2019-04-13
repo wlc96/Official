@@ -98,7 +98,7 @@ button {
 .container {
   height: 80px;
   width: 100%;
-  background-color: #16245c;
+  background-color: #313131;
   z-index: 10;
 }
 .container .content {
