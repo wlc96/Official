@@ -1,4 +1,4 @@
-var globalUrl = 'http://39.98.33.48/';
+var globalUrl = 'http://ym-zh.cn/';
 $('.mavList li').click(function() {
 	var tarUrl = $(this).attr("data-url");
 	window.location.href = globalUrl + tarUrl;
