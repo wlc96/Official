@@ -1,7 +1,10 @@
 var globalUrl = 'http://ym-zh.cn/';
+// var globalUrl = 'http://127.0.0.1:8848/公司官网/';
 $('.mavList li').click(function() {
 	var tarUrl = $(this).attr("data-url");
-	window.location.href = globalUrl + tarUrl;
+	if(tarUrl !== ""){
+		window.location.href = globalUrl + tarUrl;
+	}
 })
 
 //顶部导航栏鼠标移入事件

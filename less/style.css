@@ -121,7 +121,7 @@ button {
   text-align: center;
   float: left;
   height: 80px;
-  margin-right: 70px;
+  margin-right: 45px;
 }
 .container .content .mavList li a {
   display: inline-block;
@@ -271,8 +271,8 @@ button {
 }
 .aboutUs {
   width: 100%;
-  height: 466px;
-  background-color: #29768a;
+  height: 465px;
+  background: url(../img/abooutus.png) no-repeat 0 0;
   margin-top: 40px;
 }
 .aboutUs .absContent {
@@ -742,5 +742,377 @@ button {
   display: none;
 }
 .abousIns > div.show {
+  display: block;
+}
+/*2019-05-17新加-----关于我们*/
+.enterprisePos {
+  width: 1200px;
+  margin: 0 auto;
+  margin-top: 72px;
+}
+.enterprisePos .subTit {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.enterprisePos .firstTit {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+.enterprisePos .con {
+  font-size: 18px;
+  color: #000000;
+  line-height: 36px;
+  text-indent: 2em;
+  margin-top: 30px;
+}
+.enterprisePos .absIns {
+  margin-top: 60px;
+  margin-bottom: 100px;
+}
+.enterprisePos .absIns li {
+  width: 253px;
+  float: left;
+  margin-right: 60px;
+  height: 218px;
+  border: 1px solid #EEEEEE;
+  text-align: center;
+}
+.enterprisePos .absIns li img {
+  position: relative;
+  top: -36px;
+}
+.enterprisePos .absIns li span {
+  display: block;
+  font-size: 18px;
+  color: #5abad4;
+  margin-top: -20px;
+  margin-bottom: 50px;
+}
+.enterprisePos .absIns li p {
+  font-size: 18px;
+  line-height: 36px;
+  color: #989898;
+}
+.enterprisePos .absIns li:hover {
+  box-shadow: 0px 0px 10px 3px #eee;
+}
+.enterprisePos .coreList {
+  margin-top: 90px;
+}
+.enterprisePos .coreList li {
+  width: 300px;
+  float: left;
+  text-align: center;
+}
+.enterprisePos .coreList li .rotateBox {
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  border-radius: 5px;
+  border: 1px solid #6EC2D9;
+  text-align: center;
+}
+.enterprisePos .coreList li .rotateBox img {
+  height: 30px;
+  margin-top: 20px;
+}
+.enterprisePos .coreList li .subtit {
+  display: block;
+  margin: 18px 0;
+  font-size: 18px;
+  color: #252525;
+}
+.enterprisePos .coreList li .line {
+  display: inline-block;
+  width: 43px;
+  border-bottom: 1px solid #BFE4EE;
+}
+.enterprisePos .coreList li p {
+  font-size: 16px;
+  color: #989898;
+  line-height: 30px;
+  margin-top: 10px;
+  padding: 0 30px;
+}
+.enterprisePos .contact {
+  margin-top: 50px;
+}
+.enterprisePos .contact .left {
+  width: 518px;
+  float: left;
+}
+.enterprisePos .contact .left .fTit {
+  font-size: 18px;
+  color: #000000;
+  text-align: center;
+  margin: 15px 0;
+}
+.enterprisePos .contact .left .sTit {
+  font-size: 18px;
+  color: #989898;
+  text-align: center;
+}
+.enterprisePos .contact .left .contactCon {
+  height: 225px;
+  margin-top: 45px;
+  background: url(../img/icon-point.png) no-repeat 0 2px;
+}
+.enterprisePos .contact .left .contactCon ul {
+  margin-left: 30px;
+}
+.enterprisePos .contact .left .contactCon ul li {
+  font-size: 18px;
+  color: #989898;
+}
+.enterprisePos .contact .right {
+  width: 680px;
+  height: 405px;
+  border: 1px solid #D2D2D2;
+  float: right;
+}
+.banner {
+  width: 100%;
+}
+.banner img {
+  width: 100%;
+}
+/*产品中心*/
+.tabList {
+  overflow: hidden;
+  padding: 20px 0;
+  background-color: #efefef;
+}
+.tabList .tList {
+  width: 1200px;
+  margin: 0px auto;
+}
+.tabList .tList li {
+  width: 180px;
+  float: left;
+  margin-right: 24px;
+  padding: 15px 0;
+  font-size: 18px;
+  color: #b2b2b2;
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.tabList .tList li.active {
+  color: #ffffff;
+  background-color: #5abad4;
+}
+.tabCon .tabItem {
+  width: 1200px;
+  margin: 0px auto;
+  display: none;
+}
+.tabCon .tabItem .titIns {
+  font-size: 18px;
+  color: #141414;
+  text-indent: 2em;
+  margin: 45px 0px 60px 0px;
+  line-height: 30px;
+}
+.tabCon .tabItem .dataItem {
+  margin-bottom: 44px;
+}
+.tabCon .tabItem .dataItem .title {
+  margin-bottom: 42px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 20px;
+  color: #018cd6;
+  font-weight: bold;
+}
+.tabCon .tabItem .dataItem .title span {
+  display: inline-block;
+  width: 0;
+  height: 24px;
+  border: 3px solid #018CD6;
+  border-radius: 3px;
+  position: relative;
+  top: 7px;
+  margin-right: 10px;
+}
+.tabCon .tabItem .dataItem .yingYong {
+  overflow: hidden;
+}
+.tabCon .tabItem .dataItem .yingYong li {
+  text-align: center;
+  width: 278px;
+  float: left;
+  margin: 0 11px;
+}
+.tabCon .tabItem .dataItem .yingYong li .imgSec {
+  width: 100%;
+  height: 162px;
+  margin-bottom: 48px;
+}
+.tabCon .tabItem .dataItem .yingYong li .imgSec img {
+  width: 100%;
+  max-height: 162px;
+}
+.tabCon .tabItem .dataItem .yingYong li p {
+  font-size: 16px;
+  color: #a8a8a8;
+  line-height: 30px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 9;
+  -webkit-box-orient: vertical;
+}
+.tabCon .tabItem .dataItem .canShuCon {
+  border-top: 1px dashed #E5E5E5;
+  border-bottom: 1px dashed #E5E5E5;
+  padding: 25px 0px 0px 0px;
+}
+.tabCon .tabItem .dataItem .canShuCon .left {
+  width: 500px;
+  margin-left: 70px;
+  float: left;
+}
+.tabCon .tabItem .dataItem .canShuCon .left ul li {
+  margin-bottom: 24px;
+}
+.tabCon .tabItem .dataItem .canShuCon .left ul li .label {
+  display: inline-block;
+  width: 158px;
+  font-size: 16px;
+  color: #252525;
+}
+.tabCon .tabItem .dataItem .canShuCon .left ul li .con {
+  font-size: 16px;
+  color: #989898;
+}
+.tabCon .tabItem .dataItem .canShuCon .right {
+  width: 601px;
+  float: left;
+}
+.tabCon .tabItem .dataItem .canShuCon .right ul li {
+  margin-bottom: 24px;
+}
+.tabCon .tabItem .dataItem .canShuCon .right ul li .label {
+  display: inline-block;
+  width: 158px;
+  font-size: 16px;
+  color: #252525;
+}
+.tabCon .tabItem .dataItem .canShuCon .right ul li .con {
+  font-size: 16px;
+  color: #989898;
+}
+.tabCon .tabItem .dataItem .canShuCon .bottomIns {
+  margin-left: 70px;
+}
+.tabCon .tabItem .dataItem .canShuCon .bottomIns .label {
+  float: left;
+  display: inline-block;
+  width: 158px;
+  font-size: 16px;
+  color: #252525;
+}
+.tabCon .tabItem .dataItem .canShuCon .bottomIns .stateIns {
+  float: left;
+}
+.tabCon .tabItem .dataItem .canShuCon .bottomIns .stateIns li {
+  margin-bottom: 24px;
+  font-size: 16px;
+  color: #989898;
+}
+.tabCon .tabItem .dataItem .teDianList {
+  overflow: hidden;
+}
+.tabCon .tabItem .dataItem .teDianList li {
+  width: 198px;
+  height: 300px;
+  border: 1px solid #E5E5E5;
+  float: left;
+  margin: 15px 20px;
+  text-align: center;
+}
+.tabCon .tabItem .dataItem .teDianList li .imgBox {
+  width: 100px;
+  height: 112px;
+  padding-top: 44px;
+  margin: 0 auto;
+  border-bottom: 2px solid #E5E5E5;
+  text-align: center;
+}
+.tabCon .tabItem .dataItem .teDianList li .imgBox img {
+  width: 60px;
+}
+.tabCon .tabItem .dataItem .teDianList li .imgBox p {
+  text-align: center;
+  margin-top: 18px;
+  font-size: 20px;
+  color: #252525;
+}
+.tabCon .tabItem .dataItem .teDianList li .wordIns {
+  margin-top: 30px;
+}
+.tabCon .tabItem .dataItem .teDianList li .wordIns p {
+  font-size: 18px;
+  color: #252525;
+  margin-bottom: 30px;
+}
+.tabCon .tabItem .dataItem .teDianList li .jsCon {
+  margin-top: 30px;
+  font-size: 18px;
+  color: #989898;
+  padding: 0px 5px;
+  line-height: 30px;
+  text-align: left;
+}
+.tabCon .tabItem .dataItem .jstd .jsItem {
+  border-top: 1px solid #E5E5E5;
+  border-bottom: 1px solid #E5E5E5;
+  margin-bottom: 35px;
+  overflow: hidden;
+}
+.tabCon .tabItem .dataItem .jstd .jsItem .rimgCon {
+  width: 495px;
+  float: right;
+}
+.tabCon .tabItem .dataItem .jstd .jsItem .limgCon {
+  width: 495px;
+  float: left;
+}
+.tabCon .tabItem .dataItem .jstd .jsItem .rwordCon {
+  width: 585px;
+  float: right;
+  font-size: 18px;
+  color: #989898;
+  line-height: 30px;
+  margin-right: 24px;
+  margin-top: 83px;
+}
+.tabCon .tabItem .dataItem .jstd .jsItem .rwordCon h3 {
+  font-size: 24px;
+  color: #252525;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.tabCon .tabItem .dataItem .jstd .jsItem .lwordCon {
+  width: 585px;
+  float: left;
+  font-size: 18px;
+  color: #989898;
+  line-height: 30px;
+  margin-left: 24px;
+  margin-top: 83px;
+}
+.tabCon .tabItem .dataItem .jstd .jsItem .lwordCon h3 {
+  font-size: 24px;
+  color: #252525;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.tabCon .show {
   display: block;
 }
