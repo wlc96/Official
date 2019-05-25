@@ -1075,13 +1075,24 @@ input[type=button], input[type=submit], input[type=file], button { cursor: point
 							img{
 								.tw(60px);
 							}
-							border-bottom:2px solid #E5E5E5;
+							span.line{
+								display: inline-block;
+								.tw(75px);
+								border-bottom:2px solid #E5E5E5;
+							}
+							span.line2{
+								display: block;
+								.tw(75px);
+								.mg2(40px,auto);
+								border-bottom:2px solid #E5E5E5;
+							}
 							text-align: center;
 							p{
 								text-align: center;
 								.mt(18px);
 								.fs(20px);
 								.fc(#252525);
+								.mb(2px);
 							}
 						}
 						.wordIns{
@@ -1101,16 +1112,34 @@ input[type=button], input[type=submit], input[type=file], button { cursor: point
 							text-align: left;
 						}
 					}
+					li:hover{
+						.imgBox{
+							span.line{
+								display: inline-block;
+								.tw(75px);
+								border-bottom:2px solid #5ABAD4;
+							}
+							span.line2{
+								display: block;
+								.tw(75px);
+								.mg2(40px,auto);
+								border-bottom:2px solid #5ABAD4;
+							}
+						}
+					}
 				}
 				.jstd{
 					.jsItem{
-						border-top:1px solid #E5E5E5;
-						border-bottom: 1px solid #E5E5E5;
+						border:1px solid #E5E5E5;
 						.mb(35px);
 						.oh;
 						.rimgCon{
 							.tw(495px);
 							.fr;
+							img{
+								position: relative;
+								right:-3px;
+							}
 						}
 						.limgCon{
 							.tw(495px);

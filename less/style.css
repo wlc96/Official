@@ -1049,17 +1049,28 @@ button {
   height: 112px;
   padding-top: 44px;
   margin: 0 auto;
-  border-bottom: 2px solid #E5E5E5;
   text-align: center;
 }
 .tabCon .tabItem .dataItem .teDianList li .imgBox img {
   width: 60px;
+}
+.tabCon .tabItem .dataItem .teDianList li .imgBox span.line {
+  display: inline-block;
+  width: 75px;
+  border-bottom: 2px solid #E5E5E5;
+}
+.tabCon .tabItem .dataItem .teDianList li .imgBox span.line2 {
+  display: block;
+  width: 75px;
+  margin: 40px auto;
+  border-bottom: 2px solid #E5E5E5;
 }
 .tabCon .tabItem .dataItem .teDianList li .imgBox p {
   text-align: center;
   margin-top: 18px;
   font-size: 20px;
   color: #252525;
+  margin-bottom: 2px;
 }
 .tabCon .tabItem .dataItem .teDianList li .wordIns {
   margin-top: 30px;
@@ -1077,15 +1088,29 @@ button {
   line-height: 30px;
   text-align: left;
 }
+.tabCon .tabItem .dataItem .teDianList li:hover .imgBox span.line {
+  display: inline-block;
+  width: 75px;
+  border-bottom: 2px solid #5ABAD4;
+}
+.tabCon .tabItem .dataItem .teDianList li:hover .imgBox span.line2 {
+  display: block;
+  width: 75px;
+  margin: 40px auto;
+  border-bottom: 2px solid #5ABAD4;
+}
 .tabCon .tabItem .dataItem .jstd .jsItem {
-  border-top: 1px solid #E5E5E5;
-  border-bottom: 1px solid #E5E5E5;
+  border: 1px solid #E5E5E5;
   margin-bottom: 35px;
   overflow: hidden;
 }
 .tabCon .tabItem .dataItem .jstd .jsItem .rimgCon {
   width: 495px;
   float: right;
+}
+.tabCon .tabItem .dataItem .jstd .jsItem .rimgCon img {
+  position: relative;
+  right: -3px;
 }
 .tabCon .tabItem .dataItem .jstd .jsItem .limgCon {
   width: 495px;
