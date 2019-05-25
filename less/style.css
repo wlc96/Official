@@ -362,7 +362,7 @@ button {
   float: none;
 }
 .footBox .footContent ul li {
-  width: 166px;
+  width: 200px;
   margin-bottom: 10px;
   float: none;
 }
@@ -900,10 +900,20 @@ button {
   background-color: #ffffff;
   border-radius: 8px;
   cursor: pointer;
+  position: relative;
+}
+.tabList .tList li img {
+  position: absolute;
+  top: 58px;
+  left: 33px;
+  display: none;
 }
 .tabList .tList li.active {
   color: #ffffff;
   background-color: #5abad4;
+}
+.tabList .tList li.active img {
+  display: block;
 }
 .tabCon .tabItem {
   width: 1200px;
