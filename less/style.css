@@ -343,7 +343,6 @@ button {
 }
 .footBox {
   width: 100%;
-  height: 270px;
   background-color: #313131;
 }
 .footBox .footContent {
@@ -386,8 +385,6 @@ button {
 }
 .footBox .footContent p.banQuan {
   padding-top: 15px;
-  position: relative;
-  top: 10px;
   clear: both;
   font-size: 12px;
   border-top: 1px solid #fff;
@@ -990,7 +987,7 @@ button {
 }
 .tabCon .tabItem .dataItem .canShuCon .left ul li .label {
   display: inline-block;
-  width: 158px;
+  width: 140px;
   font-size: 16px;
   color: #252525;
 }
@@ -1007,7 +1004,7 @@ button {
 }
 .tabCon .tabItem .dataItem .canShuCon .right ul li .label {
   display: inline-block;
-  width: 158px;
+  width: 140px;
   font-size: 16px;
   color: #252525;
 }
