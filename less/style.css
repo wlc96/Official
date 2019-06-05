@@ -355,7 +355,7 @@ button {
   margin-top: 44px;
 }
 .footBox .footContent ul li.tit {
-  font-size: 14px;
+  font-size: 16px;
   margin-bottom: 15px;
   color: #ffffff;
   float: none;
@@ -366,7 +366,7 @@ button {
   float: none;
 }
 .footBox .footContent ul li a {
-  font-size: 12px;
+  font-size: 14px;
   color: #d2d2d2;
 }
 .footBox .footContent .ewmImg {
@@ -957,7 +957,7 @@ button {
 .tabCon .tabItem .dataItem .yingYong li .imgSec {
   width: 100%;
   height: 162px;
-  margin-bottom: 48px;
+  margin-bottom: 30px;
 }
 .tabCon .tabItem .dataItem .yingYong li .imgSec img {
   width: 100%;
@@ -965,7 +965,7 @@ button {
 }
 .tabCon .tabItem .dataItem .yingYong li p {
   font-size: 16px;
-  color: #a8a8a8;
+  color: #676767;
   line-height: 30px;
   overflow: hidden;
   display: -webkit-box;
@@ -993,7 +993,7 @@ button {
 }
 .tabCon .tabItem .dataItem .canShuCon .left ul li .con {
   font-size: 16px;
-  color: #989898;
+  color: #676767;
 }
 .tabCon .tabItem .dataItem .canShuCon .right {
   width: 601px;
@@ -1010,7 +1010,7 @@ button {
 }
 .tabCon .tabItem .dataItem .canShuCon .right ul li .con {
   font-size: 16px;
-  color: #989898;
+  color: #676767;
 }
 .tabCon .tabItem .dataItem .canShuCon .bottomIns {
   margin-left: 70px;
@@ -1028,7 +1028,7 @@ button {
 .tabCon .tabItem .dataItem .canShuCon .bottomIns .stateIns li {
   margin-bottom: 24px;
   font-size: 16px;
-  color: #989898;
+  color: #676767;
 }
 .tabCon .tabItem .dataItem .teDianList {
   overflow: hidden;

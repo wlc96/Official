@@ -648,10 +648,18 @@
 				})
 			})
 			//关于我们tab切换
-			$('.absHandle li').click(function() {
+			$('.absHandle li').mouseover(function() {
 				$(this).addClass('active').siblings().removeClass('active');
 				var index = $(this).index();
 				$(".abousIns>div:eq("+ index +")").addClass("show").siblings().removeClass('show');
+			})
+			$('.absHandle li').mouseleave(function() {
+				var index = $(this).index();
+				if(index !== 0){
+// 					$('.absHandle li:eq(0)').addClass('active').siblings().removeClass('active');
+// 					$(".abousIns>div:eq(0)").addClass("show").siblings().removeClass('show');
+				}
+				
 			})
 			//底部(合作伙伴)无缝滚动
 			var AutoScroll_cont = function(a, b, c, d) {
